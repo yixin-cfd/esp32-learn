@@ -6,13 +6,9 @@
 void taskA(void* param){
     ESP_LOGI("main", "Hello World!");
     for(;;){
-        
         ESP_LOGI("taskA", "print");
-        vTaskDelay(pdMS_TO_TICKS(100));
-
-        
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
-   
 }   
 
 void app_main(void)
